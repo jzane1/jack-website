@@ -8,12 +8,13 @@
       body {
         margin: 0;
         font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
-        background: #fff;
+        background: url('https://upload.wikimedia.org/wikipedia/commons/e/e5/Downtown_Austin_Skyline_2021.jpg') no-repeat center center fixed;
+        background-size: cover;
         color: #333;
       }
 
       .navbar {
-        background-color: #444;
+        background-color: rgba(68, 68, 68, 0.95);
         color: white;
         display: flex;
         justify-content: space-between;
@@ -24,7 +25,7 @@
       .nav-left {
         font-size: 1.6em;
         font-weight: 700;
-        margin-left: 0.75in; /* Moves name further to the right */
+        margin-left: 0.75in;
       }
 
       .nav-right a {
@@ -43,13 +44,19 @@
         background-color: #333;
       }
 
+      .content-wrapper {
+        background-color: rgba(255, 255, 255, 0.95); /* 👈 White readable box */
+        max-width: 1000px;
+        margin: 110px auto 60px auto;
+        padding: 60px;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+
       .container {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 40px;
-        padding: 110px 50px 50px 50px; /* Top padding lowers main content */
-        max-width: 1000px;
-        margin: auto;
         align-items: start;
       }
 
@@ -115,20 +122,22 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="left-column">
-        <div class="profile-pic">Picture of Me</div>
-        <div class="email">Email: Jackson.Zane@stanford.edu</div>
-        <img class="texas" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Texas.svg" alt="Texas silhouette" />
-      </div>
+    <div class="content-wrapper">
+      <div class="container">
+        <div class="left-column">
+          <div class="profile-pic">Picture of Me</div>
+          <div class="email">Email: Jackson.Zane@stanford.edu</div>
+          <img class="texas" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Texas.svg" alt="Texas silhouette" />
+        </div>
 
-      <div class="right-column">
-        <p>Stanford student interested in VR, military tech, and building impactful things.</p>
-        <p>Some more about me here.</p>
-        <div class="social-links">
-          <a href="https://linkedin.com">LinkedIn</a>
-          <a href="https://github.com">GitHub</a>
-          <a href="https://instagram.com">Instagram</a>
+        <div class="right-column">
+          <p>Stanford student interested in VR, military tech, and building impactful things.</p>
+          <p>Some more about me here.</p>
+          <div class="social-links">
+            <a href="https://linkedin.com">LinkedIn</a>
+            <a href="https://github.com">GitHub</a>
+            <a href="https://instagram.com">Instagram</a>
+          </div>
         </div>
       </div>
     </div>
