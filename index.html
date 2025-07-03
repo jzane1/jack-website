@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jack's Site</title>
     <meta charset="UTF-8" />
+    <title>Jackson Zane</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        color: #333;
+      }
+
+      /* NAVIGATION */
+      .navbar {
+        background-color: #444;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        align-items: center;
+      }
+
+      .nav-left {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      .nav-right a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+      }
+
+      .nav-right a:hover {
+        text-decoration: underline;
+      }
+
+      /* MAIN CONTENT */
+      .main {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px;
+        gap: 40px;
+        justify-content: center;
+      }
+
+      .profile-pic {
+        width: 250px;
+        height: 250px;
+        background-color: #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+
+      .bio {
+        max-width: 500px;
+        line-height: 1.6;
+      }
+
+      /* FOOTER */
+      .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 40px auto;
+        flex-wrap: wrap;
+        max-width: 800px;
+        gap: 20px;
+      }
+
+      .social a {
+        margin: 0 10px;
+        color: #444;
+        text-decoration: none;
+      }
+
+      .social a:hover {
+        text-decoration: underline;
+      }
+
+      .texas {
+        width: 100px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome to Jack's Website</h1>
-    <p>This is a personal site. More coming soon.</p>
+
+    <div class="navbar">
+      <div class="nav-left">Jackson Zane</div>
+      <div class="nav-right">
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">Hobbies</a>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="profile-pic">Picture of Me</div>
+      <div class="bio">
+        <p>Stanford student interested in VR, military tech, and building impactful things.</p>
+        <p>Some more about me here.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="email">Email: youremail@example.com</div>
+      <div class="social">
+        <a href="https://linkedin.com">LinkedIn</a> |
+        <a href="https://github.com">GitHub</a> |
+        <a href="https://instagram.com">Instagram</a>
+      </div>
+      <img class="texas" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Texas.svg" alt="Texas silhouette">
+    </div>
+
   </body>
 </html>
