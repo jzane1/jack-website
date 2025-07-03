@@ -7,7 +7,7 @@
       body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background-color: #fff;
+        background: #fff;
         color: #333;
       }
 
@@ -17,18 +17,18 @@
         color: white;
         display: flex;
         justify-content: space-between;
-        padding: 10px 20px;
+        padding: 15px 30px;
         align-items: center;
       }
 
       .nav-left {
-        font-size: 1.5em;
+        font-size: 1.6em;
         font-weight: bold;
       }
 
       .nav-right a {
         color: white;
-        margin-left: 20px;
+        margin-left: 25px;
         text-decoration: none;
       }
 
@@ -36,58 +36,70 @@
         text-decoration: underline;
       }
 
-      /* MAIN CONTENT */
-      .main {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 40px;
+      /* GRID LAYOUT */
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
         gap: 40px;
-        justify-content: center;
+        padding: 50px;
+        max-width: 1000px;
+        margin: auto;
+        align-items: start;
+      }
+
+      .left-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
       }
 
       .profile-pic {
         width: 250px;
         height: 250px;
-        background-color: #ddd;
+        background-color: #ccc;
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         font-weight: bold;
       }
 
-      .bio {
-        max-width: 500px;
+      .right-column {
         line-height: 1.6;
       }
 
-      /* FOOTER */
-      .footer {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 40px auto;
-        flex-wrap: wrap;
-        max-width: 800px;
-        gap: 20px;
+      .social-links {
+        margin-top: 20px;
       }
 
-      .social a {
-        margin: 0 10px;
-        color: #444;
+      .social-links a {
+        margin-right: 20px;
         text-decoration: none;
+        color: #444;
       }
 
-      .social a:hover {
+      .social-links a:hover {
         text-decoration: underline;
       }
 
       .texas {
-        width: 100px;
+        width: 120px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .left-column {
+          align-items: center;
+        }
       }
     </style>
   </head>
-  <body>
 
+  <body>
     <div class="navbar">
       <div class="nav-left">Jackson Zane</div>
       <div class="nav-right">
@@ -97,23 +109,24 @@
       </div>
     </div>
 
-    <div class="main">
-      <div class="profile-pic">Picture of Me</div>
-      <div class="bio">
-        <p>Stanford student interested in VR, military tech, and building impactful things.</p>
+    <div class="container">
+      <div class="left-column">
+        <div class="profile-pic">Picture of Me</div>
+        <div class="email">Email: Jackson.Zane@stanford.edu</div>
+        <img class="texas" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Texas.svg" alt="Texas silhouette" />
+      </div>
+
+      <div class="right-column">
+        <p>
+          Stanford student interested in VR, military tech, and building impactful things.
+        </p>
         <p>Some more about me here.</p>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/jackson-zane">LinkedIn</a>
+          <a href="https://github.com">GitHub</a>
+          <a href="https://www.instagram.com/j.zane1/">Instagram</a>
+        </div>
       </div>
     </div>
-
-    <div class="footer">
-      <div class="email">Email: youremail@example.com</div>
-      <div class="social">
-        <a href="https://linkedin.com">LinkedIn</a> |
-        <a href="https://github.com">GitHub</a> |
-        <a href="https://instagram.com">Instagram</a>
-      </div>
-      <img class="texas" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Texas.svg" alt="Texas silhouette">
-    </div>
-
   </body>
 </html>
