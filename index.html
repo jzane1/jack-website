@@ -89,9 +89,11 @@
 
       .social-links {
         display: flex;
-        justify-content: space-between;
+        justify-content: center; /* center all icons */
+        gap: 80px; /* space between them — adjust this to tighten/loosen */
+        align-items: center;
         width: 80%;
-        margin: 80px auto 0 auto; /* space below paragraph, not overlapping */
+        margin: 80px auto 0 auto;
         padding-top: 10px;
       }
 
@@ -107,7 +109,7 @@
       .social-links img.social-icon {
         height: 32px;
         width: auto;
-        max-width: 60px;
+        max-width: 80px;
         transition: transform 0.2s ease;
       }
 
