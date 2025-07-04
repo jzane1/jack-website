@@ -56,7 +56,7 @@
         background-color: #ffffff;
         max-width: 1000px;
         margin: 110px auto 60px auto;
-        padding: 60px 60px 100px 60px;
+        padding: 60px 60px 40px 60px; /* was 100px bottom */
         border-radius: 8px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
       }
@@ -72,13 +72,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 30px;
-        margin-bottom: 0;
-        padding-bottom: 0;
-      }
-
-      .left-column img {
-        margin-bottom: 0;
+        gap: 25px;
       }
 
       .profile-pic {
@@ -110,8 +104,9 @@
       .stanford-seal {
         height: 120px;
         display: block;
-        margin-bottom: -60px;
-        padding-bottom: 0;
+        margin: 0;
+        padding: 0;
+        line-height: 0;
       }
 
       .name-header {
@@ -134,14 +129,7 @@
         }
 
         .stanford-seal {
-          display: block;
-          margin-bottom: 0;
-          padding-bottom: 0;
-          line-height: 0;
-        }
-
-        .left-column {
-          line-height: 1;
+          margin: 0;
         }
       }
     </style>
