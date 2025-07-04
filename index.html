@@ -23,9 +23,17 @@
       }
 
       .nav-left {
+        display: flex;
+        align-items: center;
         font-size: 1.6em;
         font-weight: 700;
         margin-left: 0.75in;
+      }
+
+      .nav-left img.nav-icon {
+        height: 30px;
+        width: auto;
+        margin-right: 10px;
       }
 
       .nav-right a {
@@ -67,7 +75,7 @@
         gap: 30px;
       }
 
-       .profile-pic {
+      .profile-pic {
         width: 250px;
         height: 250px;
         object-fit: cover;
@@ -93,8 +101,17 @@
         text-decoration: underline;
       }
 
-      .texas {
-        width: 120px;
+      .stanford-seal {
+        width: 100px;
+      }
+
+      .name-header {
+        font-family: 'Playfair Display', serif;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 2.5em;
+        font-weight: 700;
+        color: #222;
       }
 
       @media (max-width: 768px) {
@@ -106,15 +123,6 @@
         .left-column {
           align-items: center;
         }
-
-        .name-header {
-          font-family: 'Playfair Display', Comic Sans;
-          margin-top: 0;
-          margin-bottom: 20px;
-          font-size: 2.5em;
-          font-weight: 700;
-          color: #222;
-        }
       }
     </style>
   </head>
@@ -122,8 +130,8 @@
   <body>
     <div class="navbar">
       <div class="nav-left">
-        <img src="navpic.png" alt="Profile icon" class="nav-pic" />
-        <span class="nav-name">Jackson Zane</span>
+        <img src="texas.png" alt="Texas Logo" class="nav-icon" />
+        <span>Jackson Zane</span>
       </div>
       <div class="nav-right">
         <a href="#" class="active">Home</a>
@@ -135,17 +143,17 @@
     <div class="content-wrapper">
       <div class="container">
         <div class="left-column">
-          <img class="profile-pic" src="Texas.png.png" alt="My picture" />
+          <img class="profile-pic" src="profilepic.png" alt="My picture" />
           <div class="email">
             <a href="mailto:Jackson.Zane@stanford.edu"><em>Jackson.Zane@stanford.edu</em></a>
           </div>
-          <img class="texas" src="seal.png" alt="Texas silhouette" />
+          <img class="stanford-seal" src="seal.png" alt="Stanford Seal" />
         </div>
 
         <div class="right-column">
           <h1 class="name-header">Jackson Zane</h1>
-          <p style="text-indent: 0.75cm;">  Junior at Stanford University pursuing a B.S in Computer Science. I'm interested in virtual reality and the military defense industry, especially where the two intersect. I care about solving real-world problems, things that demand practical solutions, not just academic ones.</p>
-          <p style="text-indent: 0.75cm;">  My focus is on building tools and systems that serve a clear purpose, whether in national security, training, or emerging tech. I’ve explored this through personal projects, direct outreach to defense startups, and hands-on experimentation. Outside of the classroom, I enjoy weight training, Rugby, and Muay Thai.</p>
+          <p style="text-indent: 0.75cm;">Junior at Stanford University pursuing a B.S in Computer Science. I'm interested in virtual reality and the military defense industry, especially where the two intersect. I care about solving real-world problems, things that demand practical solutions, not just academic ones.</p>
+          <p style="text-indent: 0.75cm;">My focus is on building tools and systems that serve a clear purpose, whether in national security, training, or emerging tech. I’ve explored this through personal projects, direct outreach to defense startups, and hands-on experimentation. Outside of the classroom, I enjoy weight training, Rugby, and Muay Thai.</p>
           <div class="social-links">
             <a href="https://linkedin.com">LinkedIn</a>
             <a href="https://github.com">GitHub</a>
