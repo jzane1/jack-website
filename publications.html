@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jackson Zane</title>
+  <title>Publications — Jackson Zane</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,9 +13,9 @@
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">Jackson Zane</a>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="publications.html">Publications</a></li>
+        <li><a href="publications.html" class="active">Publications</a></li>
         <li><a href="projects.html">Projects</a></li>
       </ul>
     </div>
@@ -24,35 +24,63 @@
   <!-- ── Main content ── -->
   <main class="main">
 
-    <!-- Hero -->
-    <section class="hero">
-      <p class="hero-eyebrow">Stanford University &nbsp;·&nbsp; Data Science</p>
-      <h1 class="hero-name">Jackson Zane</h1>
-      <p class="hero-tagline">
-        Building embodied AI agents for games and immersive environments —
-        from ML models that drive behavior to the infrastructure that deploys them.
-      </p>
-      <div class="hero-ctas">
-        <a href="about.html" class="btn btn-primary">About me</a>
-        <a href="projects.html" class="btn btn-secondary">View projects</a>
-      </div>
-    </section>
+    <!-- Page header -->
+    <div class="page-header">
+      <h1>Publications</h1>
+      <p>Peer-reviewed research and preprints.</p>
+    </div>
 
-    <!-- Focus -->
+    <!-- Publication list -->
     <section>
-      <p class="section-label">Focus</p>
-      <p class="intro-text">
-        I'm interested in making virtual characters feel persistent, believable, and genuinely
-        interactive — the intersection of AI agent systems, game engine integration, and VR/XR
-        deployment. My work spans the full stack: ML behavior models, real-time inference
-        pipelines, and deployment on spatial computing hardware. I'm currently pursuing
-        research opportunities at Stanford and targeting roles in AI &amp; gaming.
-      </p>
-      <div class="quick-links">
-        <a href="about.html" class="quick-link-card">About <span class="arrow">→</span></a>
-        <a href="publications.html" class="quick-link-card">Publications <span class="arrow">→</span></a>
-        <a href="projects.html" class="quick-link-card">Projects <span class="arrow">→</span></a>
+
+      <!-- Publication card -->
+      <div class="pub-card">
+
+        <p class="pub-journal">Statistics in Biosciences</p>
+
+        <h2 class="pub-title">
+          Housekeeping Genes' DNA Methylation Patterns in Breast and Endometrial Cancers
+        </h2>
+
+        <p class="pub-citation">
+          Zane, J. et al. "Housekeeping Genes' DNA Methylation Patterns in Breast and
+          Endometrial Cancers." <em>Statistics in Biosciences</em>. DOI:
+          <a href="#" title="DOI link — fill in when available">10.xxxx/xxxxx</a>
+          <!-- TODO: Replace the DOI above with the actual DOI once assigned -->
+        </p>
+
+        <p class="pub-block-label">Summary</p>
+        <p class="pub-summary">
+          This study examined whether housekeeping genes — genes considered essential to
+          basic cellular function and expected to be expressed uniformly across all cell
+          types — show abnormal DNA methylation patterns in breast and endometrial cancer
+          patients. DNA methylation is a chemical modification that can silence gene
+          expression without altering the underlying DNA sequence, and disruptions in
+          these patterns are a well-established hallmark of malignancy. By applying
+          statistical analysis to methylation data across patient datasets, the work
+          identifies systematic alterations in these universally expressed genes, offering
+          potential insight into shared epigenetic mechanisms across two distinct
+          gynecologic and breast malignancies — and raising questions about the stability
+          of the "housekeeping" designation in cancer contexts.
+        </p>
+
+        <div class="pub-links">
+          <a href="#" class="btn btn-ghost" title="DOI link — fill in when available">
+            <!-- External link icon -->
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                 style="margin-right:4px">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            View paper
+          </a>
+        </div>
+
       </div>
+      <!-- end publication card -->
+
     </section>
 
   </main>
@@ -63,7 +91,6 @@
       <span class="footer-copy">© 2026 Jackson Zane</span>
       <div class="footer-socials">
 
-        <!-- Email -->
         <a href="mailto:Jackson.Zane@stanford.edu" aria-label="Email">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                stroke-linecap="round" stroke-linejoin="round">
@@ -72,7 +99,6 @@
           </svg>
         </a>
 
-        <!-- LinkedIn -->
         <a href="https://linkedin.com/in/jackson-zane" target="_blank" rel="noopener" aria-label="LinkedIn">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136
@@ -84,7 +110,6 @@
           </svg>
         </a>
 
-        <!-- GitHub -->
         <a href="https://github.com/jzane1" target="_blank" rel="noopener" aria-label="GitHub">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729
@@ -95,7 +120,6 @@
           </svg>
         </a>
 
-        <!-- Instagram -->
         <a href="https://instagram.com/j.zane1" target="_blank" rel="noopener" aria-label="Instagram">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069
