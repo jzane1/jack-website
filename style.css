@@ -119,11 +119,12 @@ img { max-width: 100%; display: block; }
    FOOTER
    ============================================================ */
 .site-footer {
-  background: linear-gradient(180deg, var(--cream) 0%, var(--cream-deep) 100%);
+  background:
+    radial-gradient(80% 120% at 80% 0%, rgba(74,124,89,0.08) 0%, rgba(74,124,89,0) 55%),
+    linear-gradient(145deg, #2a2d31 0%, #1c1e21 55%, #141517 100%);
   padding: 2.25rem 3rem;
-  margin-top: 5rem;
-  border-top: 1px solid rgba(0,0,0,0.35);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.07);
+  border-top: 1px solid rgba(0,0,0,0.45);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
 }
 
 .footer-inner {
